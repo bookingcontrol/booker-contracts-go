@@ -1,4 +1,4 @@
-module github.com/bookingcontrol/booker-contracts-go/v1
+module github.com/bookingcontrol/booker-contracts-go
 
 go 1.23.0
 
