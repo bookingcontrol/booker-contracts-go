@@ -1134,7 +1134,7 @@ const file_common_events_proto_rawDesc = "" +
 	"\aroom_id\x18\x01 \x01(\tR\x06roomId\x12\x1b\n" +
 	"\ttable_ids\x18\x02 \x03(\tR\btableIds\"*\n" +
 	"\x14VenueScheduleUpdated\x12\x12\n" +
-	"\x04date\x18\x01 \x01(\tR\x04dateB9Z7github.com/bookingcontrol/booker-contracts-go/v1/commonb\x06proto3"
+	"\x04date\x18\x01 \x01(\tR\x04dateB6Z4github.com/bookingcontrol/booker-contracts-go/commonb\x06proto3"
 
 var (
 	file_common_events_proto_rawDescOnce sync.Once

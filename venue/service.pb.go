@@ -51,7 +51,7 @@ const file_venue_service_proto_rawDesc = "" +
 	"\x0fGetOpeningHours\x12\x1d.venue.GetOpeningHoursRequest\x1a\x13.venue.OpeningHours\x12P\n" +
 	"\x0fSetSpecialHours\x12\x1d.venue.SetSpecialHoursRequest\x1a\x1e.venue.SetSpecialHoursResponse\x12V\n" +
 	"\x11CheckAvailability\x12\x1f.venue.CheckAvailabilityRequest\x1a .venue.CheckAvailabilityResponse\x12M\n" +
-	"\x0eGetTableLayout\x12\x1c.venue.GetTableLayoutRequest\x1a\x1d.venue.GetTableLayoutResponseB8Z6github.com/bookingcontrol/booker-contracts-go/v1/venueb\x06proto3"
+	"\x0eGetTableLayout\x12\x1c.venue.GetTableLayoutRequest\x1a\x1d.venue.GetTableLayoutResponseB5Z3github.com/bookingcontrol/booker-contracts-go/venueb\x06proto3"
 
 var file_venue_service_proto_goTypes = []any{
 	(*CreateVenueRequest)(nil),        // 0: venue.CreateVenueRequest

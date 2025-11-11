@@ -37,7 +37,7 @@ const file_booking_service_proto_rawDesc = "" +
 	"\fMarkFinished\x12\x1c.booking.MarkFinishedRequest\x1a\x10.booking.Booking\x12:\n" +
 	"\n" +
 	"MarkNoShow\x12\x1a.booking.MarkNoShowRequest\x1a\x10.booking.Booking\x12i\n" +
-	"\x16CheckTableAvailability\x12&.booking.CheckTableAvailabilityRequest\x1a'.booking.CheckTableAvailabilityResponseB:Z8github.com/bookingcontrol/booker-contracts-go/v1/bookingb\x06proto3"
+	"\x16CheckTableAvailability\x12&.booking.CheckTableAvailabilityRequest\x1a'.booking.CheckTableAvailabilityResponseB7Z5github.com/bookingcontrol/booker-contracts-go/bookingb\x06proto3"
 
 var file_booking_service_proto_goTypes = []any{
 	(*CreateBookingRequest)(nil),           // 0: booking.CreateBookingRequest

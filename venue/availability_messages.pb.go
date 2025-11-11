@@ -7,7 +7,7 @@
 package venue
 
 import (
-	common "github.com/bookingcontrol/booker-contracts-go/v1/common"
+	common "github.com/bookingcontrol/booker-contracts-go/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -212,7 +212,7 @@ const file_venue_availability_messages_proto_rawDesc = "" +
 	"\x05table\x18\x01 \x01(\v2\x10.common.TableRefR\x05table\x12\x1c\n" +
 	"\tavailable\x18\x02 \x01(\bR\tavailable\x12\x16\n" +
 	"\x06reason\x18\x03 \x01(\tR\x06reason\x12<\n" +
-	"\x11merged_with_table\x18\x04 \x01(\v2\x10.common.TableRefR\x0fmergedWithTableB8Z6github.com/bookingcontrol/booker-contracts-go/v1/venueb\x06proto3"
+	"\x11merged_with_table\x18\x04 \x01(\v2\x10.common.TableRefR\x0fmergedWithTableB5Z3github.com/bookingcontrol/booker-contracts-go/venueb\x06proto3"
 
 var (
 	file_venue_availability_messages_proto_rawDescOnce sync.Once

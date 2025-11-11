@@ -479,7 +479,7 @@ const file_venue_room_messages_proto_rawDesc = "" +
 	"\x05rooms\x18\x01 \x03(\v2\v.venue.RoomR\x05rooms\x12\x14\n" +
 	"\x05total\x18\x02 \x01(\x05R\x05total\".\n" +
 	"\x12DeleteRoomResponse\x12\x18\n" +
-	"\asuccess\x18\x01 \x01(\bR\asuccessB8Z6github.com/bookingcontrol/booker-contracts-go/v1/venueb\x06proto3"
+	"\asuccess\x18\x01 \x01(\bR\asuccessB5Z3github.com/bookingcontrol/booker-contracts-go/venueb\x06proto3"
 
 var (
 	file_venue_room_messages_proto_rawDescOnce sync.Once

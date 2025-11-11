@@ -670,7 +670,7 @@ const file_venue_table_messages_proto_rawDesc = "" +
 	"\aroom_id\x18\x02 \x01(\tR\x06roomId\"W\n" +
 	"\x16GetTableLayoutResponse\x12\x17\n" +
 	"\aroom_id\x18\x01 \x01(\tR\x06roomId\x12$\n" +
-	"\x06tables\x18\x02 \x03(\v2\f.venue.TableR\x06tablesB8Z6github.com/bookingcontrol/booker-contracts-go/v1/venueb\x06proto3"
+	"\x06tables\x18\x02 \x03(\v2\f.venue.TableR\x06tablesB5Z3github.com/bookingcontrol/booker-contracts-go/venueb\x06proto3"
 
 var (
 	file_venue_table_messages_proto_rawDescOnce sync.Once

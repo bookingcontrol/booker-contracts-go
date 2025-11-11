@@ -7,7 +7,7 @@
 package booking
 
 import (
-	common "github.com/bookingcontrol/booker-contracts-go/v1/common"
+	common "github.com/bookingcontrol/booker-contracts-go/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -959,7 +959,7 @@ const file_booking_messages_proto_rawDesc = "" +
 	"\x15TableAvailabilityInfo\x12\x19\n" +
 	"\btable_id\x18\x01 \x01(\tR\atableId\x12\x1c\n" +
 	"\tavailable\x18\x02 \x01(\bR\tavailable\x12\x16\n" +
-	"\x06reason\x18\x03 \x01(\tR\x06reasonB:Z8github.com/bookingcontrol/booker-contracts-go/v1/bookingb\x06proto3"
+	"\x06reason\x18\x03 \x01(\tR\x06reasonB7Z5github.com/bookingcontrol/booker-contracts-go/bookingb\x06proto3"
 
 var (
 	file_booking_messages_proto_rawDescOnce sync.Once
