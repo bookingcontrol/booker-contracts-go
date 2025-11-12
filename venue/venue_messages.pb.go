@@ -30,6 +30,7 @@ type Venue struct {
 	Address       string                 `protobuf:"bytes,4,opt,name=address,proto3" json:"address,omitempty"`
 	Phone         string                 `protobuf:"bytes,7,opt,name=phone,proto3" json:"phone,omitempty"`
 	Email         string                 `protobuf:"bytes,8,opt,name=email,proto3" json:"email,omitempty"`
+	Description   string                 `protobuf:"bytes,9,opt,name=description,proto3" json:"description,omitempty"` // Описание заведения
 	CreatedAt     int64                  `protobuf:"varint,5,opt,name=created_at,json=createdAt,proto3" json:"created_at,omitempty"`
 	UpdatedAt     int64                  `protobuf:"varint,6,opt,name=updated_at,json=updatedAt,proto3" json:"updated_at,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -108,6 +109,13 @@ func (x *Venue) GetEmail() string {
 	return ""
 }
 
+func (x *Venue) GetDescription() string {
+	if x != nil {
+		return x.Description
+	}
+	return ""
+}
+
 func (x *Venue) GetCreatedAt() int64 {
 	if x != nil {
 		return x.CreatedAt
@@ -130,6 +138,7 @@ type CreateVenueRequest struct {
 	Address       string                 `protobuf:"bytes,3,opt,name=address,proto3" json:"address,omitempty"`
 	Phone         string                 `protobuf:"bytes,4,opt,name=phone,proto3" json:"phone,omitempty"`
 	Email         string                 `protobuf:"bytes,5,opt,name=email,proto3" json:"email,omitempty"`
+	Description   string                 `protobuf:"bytes,6,opt,name=description,proto3" json:"description,omitempty"` // Описание заведения (опционально)
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -195,6 +204,13 @@ func (x *CreateVenueRequest) GetPhone() string {
 func (x *CreateVenueRequest) GetEmail() string {
 	if x != nil {
 		return x.Email
+	}
+	return ""
+}
+
+func (x *CreateVenueRequest) GetDescription() string {
+	if x != nil {
+		return x.Description
 	}
 	return ""
 }
@@ -302,6 +318,7 @@ type UpdateVenueRequest struct {
 	Address       string                 `protobuf:"bytes,3,opt,name=address,proto3" json:"address,omitempty"`
 	Phone         string                 `protobuf:"bytes,4,opt,name=phone,proto3" json:"phone,omitempty"`
 	Email         string                 `protobuf:"bytes,5,opt,name=email,proto3" json:"email,omitempty"`
+	Description   string                 `protobuf:"bytes,6,opt,name=description,proto3" json:"description,omitempty"` // Описание заведения (опционально)
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -367,6 +384,13 @@ func (x *UpdateVenueRequest) GetPhone() string {
 func (x *UpdateVenueRequest) GetEmail() string {
 	if x != nil {
 		return x.Email
+	}
+	return ""
+}
+
+func (x *UpdateVenueRequest) GetDescription() string {
+	if x != nil {
+		return x.Description
 	}
 	return ""
 }
@@ -516,35 +540,38 @@ var File_venue_venue_messages_proto protoreflect.FileDescriptor
 
 const file_venue_venue_messages_proto_rawDesc = "" +
 	"\n" +
-	"\x1avenue/venue_messages.proto\x12\x05venue\"\xcb\x01\n" +
+	"\x1avenue/venue_messages.proto\x12\x05venue\"\xed\x01\n" +
 	"\x05Venue\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x1a\n" +
 	"\btimezone\x18\x03 \x01(\tR\btimezone\x12\x18\n" +
 	"\aaddress\x18\x04 \x01(\tR\aaddress\x12\x14\n" +
 	"\x05phone\x18\a \x01(\tR\x05phone\x12\x14\n" +
-	"\x05email\x18\b \x01(\tR\x05email\x12\x1d\n" +
+	"\x05email\x18\b \x01(\tR\x05email\x12 \n" +
+	"\vdescription\x18\t \x01(\tR\vdescription\x12\x1d\n" +
 	"\n" +
 	"created_at\x18\x05 \x01(\x03R\tcreatedAt\x12\x1d\n" +
 	"\n" +
-	"updated_at\x18\x06 \x01(\x03R\tupdatedAt\"\x8a\x01\n" +
+	"updated_at\x18\x06 \x01(\x03R\tupdatedAt\"\xac\x01\n" +
 	"\x12CreateVenueRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x1a\n" +
 	"\btimezone\x18\x02 \x01(\tR\btimezone\x12\x18\n" +
 	"\aaddress\x18\x03 \x01(\tR\aaddress\x12\x14\n" +
 	"\x05phone\x18\x04 \x01(\tR\x05phone\x12\x14\n" +
-	"\x05email\x18\x05 \x01(\tR\x05email\"!\n" +
+	"\x05email\x18\x05 \x01(\tR\x05email\x12 \n" +
+	"\vdescription\x18\x06 \x01(\tR\vdescription\"!\n" +
 	"\x0fGetVenueRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\"A\n" +
 	"\x11ListVenuesRequest\x12\x14\n" +
 	"\x05limit\x18\x01 \x01(\x05R\x05limit\x12\x16\n" +
-	"\x06offset\x18\x02 \x01(\x05R\x06offset\"~\n" +
+	"\x06offset\x18\x02 \x01(\x05R\x06offset\"\xa0\x01\n" +
 	"\x12UpdateVenueRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x18\n" +
 	"\aaddress\x18\x03 \x01(\tR\aaddress\x12\x14\n" +
 	"\x05phone\x18\x04 \x01(\tR\x05phone\x12\x14\n" +
-	"\x05email\x18\x05 \x01(\tR\x05email\"$\n" +
+	"\x05email\x18\x05 \x01(\tR\x05email\x12 \n" +
+	"\vdescription\x18\x06 \x01(\tR\vdescription\"$\n" +
 	"\x12DeleteVenueRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\"P\n" +
 	"\x12ListVenuesResponse\x12$\n" +
