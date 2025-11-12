@@ -317,6 +317,7 @@ type UpdateTableRequest struct {
 	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	Capacity      int32                  `protobuf:"varint,3,opt,name=capacity,proto3" json:"capacity,omitempty"`
 	Zone          string                 `protobuf:"bytes,4,opt,name=zone,proto3" json:"zone,omitempty"`
+	CanMerge      bool                   `protobuf:"varint,5,opt,name=can_merge,json=canMerge,proto3" json:"can_merge,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -377,6 +378,13 @@ func (x *UpdateTableRequest) GetZone() string {
 		return x.Zone
 	}
 	return ""
+}
+
+func (x *UpdateTableRequest) GetCanMerge() bool {
+	if x != nil {
+		return x.CanMerge
+	}
+	return false
 }
 
 type DeleteTableRequest struct {
@@ -652,12 +660,13 @@ const file_venue_table_messages_proto_rawDesc = "" +
 	"\aroom_id\x18\x01 \x01(\tR\x06roomId\x12\x19\n" +
 	"\bvenue_id\x18\x02 \x01(\tR\avenueId\x12\x14\n" +
 	"\x05limit\x18\x03 \x01(\x05R\x05limit\x12\x16\n" +
-	"\x06offset\x18\x04 \x01(\x05R\x06offset\"h\n" +
+	"\x06offset\x18\x04 \x01(\x05R\x06offset\"\x85\x01\n" +
 	"\x12UpdateTableRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x1a\n" +
 	"\bcapacity\x18\x03 \x01(\x05R\bcapacity\x12\x12\n" +
-	"\x04zone\x18\x04 \x01(\tR\x04zone\"$\n" +
+	"\x04zone\x18\x04 \x01(\tR\x04zone\x12\x1b\n" +
+	"\tcan_merge\x18\x05 \x01(\bR\bcanMerge\"$\n" +
 	"\x12DeleteTableRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\"P\n" +
 	"\x12ListTablesResponse\x12$\n" +
